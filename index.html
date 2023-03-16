@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+        html {
+            height: 200%;
+        }
+
+
+
+
+        
+        body {
+            font-family: sans-serif;
+            background: linear-gradient(rgb(205, 198, 232), #1c0680);
+            font-size: 25px;
+            background-size: contain;
+
+
+        }
+
+
+
+
+
+        .abc {
+            padding: 50px;
+
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #fcfcfc;
+            outline: none;
+        }
+
+        div {
+            padding: 15px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .b {
+            background-color: #0a28ef;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            font-weight: bold;
+        }
+
+        .b:hover {
+            transform: scale(1.1);
+        }
+
+        .xyz {
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            right: 277%;
+
+            width: 700px;
+            margin: 400px auto 10px auto;
+            padding: 40px;
+            transform: translate(-40%, -50%);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px;
+            border-radius: 10px;
+
+
+        }
+
+        .ibm {
+            position: absolute;
+            width: 450px;
+            margin: 231px 0 0 1050px;
+            left: 10%;
+            top: 20%;
+            display: inline-flex;
+
+        }
+
+        .ibm:hover {
+            transform: scale(1.2);
+            transition-duration: 3s;
+            rotate: 360deg;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            display: flex;
+            
+            flex-direction: column;
+        }
+        @media only screen and (max-width: 600px){
+            .xyz{
+                
+            }
+                 
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <img src="https://pngimg.com/uploads/ibm/ibm_PNG19655.png" alt="" srcset="" class="ibm">
+    <form>
+
+        <div class="xyz">
+            <div class="abc">
+                <h1 style="text-align: center;"> Registration Form</h1>
+                <hr>
+                <label for="abc">Firstname : </label>
+                <input type="text" name="Firstname" placeholder="Firstname" size="15" class="box" required />
+                <label for="abc">Middlename: </label>
+                <input type="text" name="middlename" placeholder="Middlename" size="15" class="box" required />
+                <label for="abc"> Lastname: </label>
+                <input type="text" name="lastname" placeholder="Lastname" size="15" class="box" required />
+                <div>
+                    <label> Course :</label>
+                    <select>
+                        <option value="Course">Course</option>
+                        <option value="ADIT">ADIT</option>
+                        <option value="ELECTRICIAN">ELECTRICIAN</option>
+                        <option value="FITTER">FITTER</option>
+                        <option value="B.SC">B.SC</option>
+                        <option value="M.SC">M.SC</option>
+                        <option value="ITI">ITI</option>
+                        <option value="SELF EMPLYOED">SELF EMPLOYED</option>
+                    </select>
+                </div>
+                <div>
+                    <label>
+                        Gender :
+                    </label><br>
+                    Male <input type="radio" value="Male" name="gender" class="box" checked>
+                    Female<input type="radio" value="Female" name="gender" class="box">
+                    Other<input type="radio" value="Other" name="gender" class="box">
+                </div>
+                <label>
+                    Phone :
+                </label>
+                <input type="text" name="country code" value="+91" size="2" class="box" />
+                <label for="text">Alternate Phone :</label>
+                <input type="text" name="phone" size="10" aria-placeholder="country code" value="+91" class="box"
+                    required>
+                Current Address :
+                <textarea cols="80" rows="5" placeholder="Current Address" value="address" class="box" required>
+</textarea>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" class="box" required>
+
+                <label for="pass"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pass" class="box" required>
+
+                <label for="psw-repeat"><b>Re-type Password</b></label>
+                <input type="password" placeholder="Retype Password" name="psw-repeat" class="box" required>
+                <input type="SUBMIT" value="SUBMIT">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
